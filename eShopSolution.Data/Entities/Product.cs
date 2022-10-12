@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace eShopSolution.Data.Entities
@@ -13,6 +14,10 @@ namespace eShopSolution.Data.Entities
         public int ViewCount { set; get; }
         public DateTime DateCreated { set; get; }
         public string SeoAlias { set; get; }
+
+        public List<ProductInCategory> ProductInCategories { get; set; }
+
+        public List<OrderDetail> OrderDetails { get; set; }
 
     }
 }
