@@ -1,5 +1,6 @@
 ﻿using eShopSolution.Data.Configurations;
 using eShopSolution.Data.Entities;
+using eShopSolution.Data.Extensions;
 using JetBrains.Annotations;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -16,6 +17,7 @@ namespace eShopSolution.Data.EF
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //Configure using Fluent API
             modelBuilder.ApplyConfiguration(new CartConfiguration());
 
             modelBuilder.ApplyConfiguration(new AppConfigConfiguration());
@@ -32,7 +34,8 @@ namespace eShopSolution.Data.EF
             modelBuilder.ApplyConfiguration(new TransactionConfiguration());
 
 
-
+            //Data_Seeding
+            modelBuilder.Seed();
             //base.OnModelCreating(modelBuilder);
         }
 
