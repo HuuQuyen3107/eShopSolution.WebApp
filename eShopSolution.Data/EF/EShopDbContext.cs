@@ -65,6 +65,7 @@ namespace eShopSolution.Data.EF
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Language> Languages { get; set; }
         public DbSet<AppConfig> AppConfigs { get; set; }
+        public DbSet<ProductImage> ProductImages { get; set; }
 
     }
 }
