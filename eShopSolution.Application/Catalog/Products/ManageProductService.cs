@@ -7,7 +7,6 @@ using eShopSolution.Data.Entities;
 using System.Linq;
 using eShopSolution.Utilities.Exceptions;
 using Microsoft.EntityFrameworkCore;
-using eShopSolution.ViewModels.Catalog.Products.Manage;
 using eShopSolution.ViewModels.Catalog.Products;
 using eShopSolution.ViewModels.Common;
 using Microsoft.AspNetCore.Http;
@@ -93,7 +92,7 @@ namespace eShopSolution.Application.Catalog.Products
         return await _context.SaveChangesAsync();
         }
 
-        public async Task<PageResult<ProductViewModel>> GetAllPaging(GetProductPagingRequest request)   //Phân trang
+        public async Task<PageResult<ProductViewModel>> GetAllPaging(GetManageProductPagingRequest request)   //Phân trang
         {
             //Select join
             var query = from p in _context.Products
@@ -110,7 +109,7 @@ namespace eShopSolution.Application.Catalog.Products
             //Paging
             int totalRow = await query.CountAsync();
 
-            var data = await query.Skip(request.PageIndex - 1)
+            var data = await query.Skip((request.PageIndex - 1)*request.PageSize)
                 .Take(request.PageSize)
                 .Select(x => new ProductViewModel()
                 {
