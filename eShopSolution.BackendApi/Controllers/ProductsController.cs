@@ -133,7 +133,7 @@ namespace eShopSolution.BackendApi.Controllers
             return Ok();
         }
 
-        [HttpGet("{productId}/images/{imageId}")]     //http://localhost:port/product/productId
+        [HttpGet("{productId}/images/{imageId}")]    
         public async Task<IActionResult> GetImageById(int productId, int imageId)
         {
             var image = await _manageProductService.GetImageById(imageId);
