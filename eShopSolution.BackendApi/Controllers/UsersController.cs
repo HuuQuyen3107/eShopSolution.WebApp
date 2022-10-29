@@ -15,9 +15,9 @@ namespace eShopSolution.BackendApi.Controllers
     [Authorize]
     public class UsersController : ControllerBase
     {
-        private readonly IUserService _userService;
+        private readonly IUserSevice _userService;
 
-        public UsersController(IUserService userService)
+        public UsersController(IUserSevice userService)
         {
             _userService = userService;
         }

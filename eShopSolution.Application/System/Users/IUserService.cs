@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace eShopSolution.Application.System.Users
 {
-    public interface IUserService
+    public interface IUserSevice
     {
         Task<ApiResult<string>> Authencate(LoginRequest request);
 
