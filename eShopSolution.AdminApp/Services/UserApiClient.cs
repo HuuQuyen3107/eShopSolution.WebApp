@@ -70,7 +70,7 @@ namespace eShopSolution.AdminApp.Services
             if (response.IsSuccessStatusCode)
                 return JsonConvert.DeserializeObject<ApiSuccessResult<UserVm>>(body);
 
-            return JsonConvert.DeserializeObject<ApiErrorResult<UserVm>>(body); ;
+            return JsonConvert.DeserializeObject<ApiErrorResult<UserVm>>(body);
         }
 
         public async Task<ApiResult<PageResult<UserVm>>> GetUserPagings(GetUserPagingRequest request)
