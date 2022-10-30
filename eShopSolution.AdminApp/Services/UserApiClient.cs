@@ -13,13 +13,14 @@ using System.Threading.Tasks;
 
 namespace eShopSolution.AdminApp.Services
 {
-    public class UserApiClient : IUserApiClient
+    public class UserApiClient : BaseApiClient, IUserApiClient
     {
         private readonly IHttpClientFactory _httpClientFactory;
         private readonly IConfiguration _configuration;
         private readonly IHttpContextAccessor _httpContextAccessor;
 
         public UserApiClient(IHttpClientFactory httpClientFactory, IHttpContextAccessor httpContextAccessor, IConfiguration configuration)
+            : base(httpClientFactory, httpContextAccessor, configuration)
         {
             _httpClientFactory = httpClientFactory;
             _configuration = configuration;
@@ -43,34 +44,12 @@ namespace eShopSolution.AdminApp.Services
 
         public async Task<ApiResult<bool>> Delete(Guid id)
         {
-            var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
-            var client = _httpClientFactory.CreateClient();
-
-            client.BaseAddress = new Uri(_configuration["BaseAddress"]);
-            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
-
-            var response = await client.DeleteAsync($"/api/users/{id}");
-            var body = await response.Content.ReadAsStringAsync();
-            if (response.IsSuccessStatusCode)
-                return JsonConvert.DeserializeObject<ApiSuccessResult<bool>>(body);
-
-            return JsonConvert.DeserializeObject<ApiErrorResult<bool>>(body);
+            return await DeleteAsync<ApiResult<bool>>($"/api/users/{id}");
         }
 
         public async Task<ApiResult<UserVm>> GetById(Guid id)
         {
-            var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
-            var client = _httpClientFactory.CreateClient();
-
-            client.BaseAddress = new Uri(_configuration["BaseAddress"]);
-            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
-
-            var response = await client.GetAsync($"/api/users/{id}");
-            var body = await response.Content.ReadAsStringAsync();
-            if (response.IsSuccessStatusCode)
-                return JsonConvert.DeserializeObject<ApiSuccessResult<UserVm>>(body);
-
-            return JsonConvert.DeserializeObject<ApiErrorResult<UserVm>>(body);
+            return await GetByIdAsync<ApiResult<UserVm>>($"/api/users/{id}");
         }
 
         public async Task<ApiResult<PageResult<UserVm>>> GetUserPagings(GetUserPagingRequest request)
