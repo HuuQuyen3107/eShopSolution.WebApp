@@ -54,18 +54,10 @@ namespace eShopSolution.AdminApp.Services
 
         public async Task<ApiResult<PageResult<UserVm>>> GetUserPagings(GetUserPagingRequest request)
         {
-            var client = _httpClientFactory.CreateClient();
-            var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
-
-            client.BaseAddress = new Uri(_configuration["BaseAddress"]);
-            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
-
-            var response = await client.GetAsync($"/api/users/paging?pageIndex={request.PageIndex}" +
+            var data = await base.GetAsync<ApiResult<PageResult<UserVm>>>($"/api/users/paging?pageIndex={request.PageIndex}" +
                 $"&pageSize={request.PageSize}&keyword={request.Keyword}");
-            var body = await response.Content.ReadAsStringAsync();
-            var user = JsonConvert.DeserializeObject<ApiSuccessResult<PageResult<UserVm>>>(body);
 
-            return user;
+            return data;
         }
 
         public async Task<ApiResult<bool>> RegisterUser(RegisterRequest registerRequest)
