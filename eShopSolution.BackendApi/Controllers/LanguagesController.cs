@@ -1,9 +1,5 @@
 ﻿using eShopSolution.Application.System.Languages;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace eShopSolution.BackendApi.Controllers
@@ -20,8 +16,7 @@ namespace eShopSolution.BackendApi.Controllers
         }
 
         //*********PUBLIC*******
-        //http://localhost:port/product?pageIndex=1&pangeSize=10&CategoryId=?
-        [HttpGet()]
+        [HttpGet]
         public async Task<IActionResult> GetAll()
         {
             var products = await _languageService.GetAll();
