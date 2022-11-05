@@ -38,7 +38,15 @@ namespace eShopSolution.BackendApi.Controllers
         [HttpGet("{productId}/{languageId}")]     //http://localhost:port/product/productId
         public async Task<IActionResult> GetById(int productId, string languageId)
         {
-            var product = await _productService.GetById(productId, languageId);
+            var products = await _productService.GetById(productId, languageId);
+            return Ok(products);
+        }
+
+        [HttpGet("featured/{languageId}/{take}")]     //http://localhost:port/product/productId
+        [AllowAnonymous]
+        public async Task<IActionResult> GetFeaturedProducts(string languageId, int take)
+        {
+            var product = await _productService.GetFeaturedProducts(languageId, take);
             if (product == null)
                 return BadRequest("Cannot find Product");
             return Ok(product);
