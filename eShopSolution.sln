@@ -26,7 +26,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Domain", "2.Domain", "{C0
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Hosts", "3.Hosts", "{6577D11B-0AAA-4A03-9959-985952918809}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopSolution.AdminApp", "eShopSolution.AdminApp\eShopSolution.AdminApp.csproj", "{AD9FD5F4-6881-48F6-8C05-FB858E6A5D1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShopSolution.AdminApp", "eShopSolution.AdminApp\eShopSolution.AdminApp.csproj", "{AD9FD5F4-6881-48F6-8C05-FB858E6A5D1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopSolution.ApiIntegration", "eShopSolution.ApiIntegration\eShopSolution.ApiIntegration.csproj", "{416F4150-D08C-4EA3-8375-0A2B3553798B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,6 +64,10 @@ Global
 		{AD9FD5F4-6881-48F6-8C05-FB858E6A5D1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD9FD5F4-6881-48F6-8C05-FB858E6A5D1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD9FD5F4-6881-48F6-8C05-FB858E6A5D1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{416F4150-D08C-4EA3-8375-0A2B3553798B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{416F4150-D08C-4EA3-8375-0A2B3553798B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{416F4150-D08C-4EA3-8375-0A2B3553798B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{416F4150-D08C-4EA3-8375-0A2B3553798B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +80,7 @@ Global
 		{363B928A-DF17-44E5-BDE7-5E6055239A39} = {B59D3EC1-AFAF-4DD3-AE5C-2AE79DF55BF2}
 		{FAD153AD-0397-49C1-A972-79D4D80EE306} = {6577D11B-0AAA-4A03-9959-985952918809}
 		{AD9FD5F4-6881-48F6-8C05-FB858E6A5D1E} = {6577D11B-0AAA-4A03-9959-985952918809}
+		{416F4150-D08C-4EA3-8375-0A2B3553798B} = {6577D11B-0AAA-4A03-9959-985952918809}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5108B6A7-ADB4-4E30-8FC4-2282F41390E1}
