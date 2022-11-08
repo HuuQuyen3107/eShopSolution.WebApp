@@ -169,9 +169,21 @@
     <value>Page</value>
     <comment>Common</comment>
   </data>
+  <data name="Price Lowest first" xml:space="preserve">
+    <value>Price Lowest first</value>
+    <comment>Common</comment>
+  </data>
   <data name="Product Details" xml:space="preserve">
     <value>Product Details</value>
     <comment>/Product/Detail</comment>
+  </data>
+  <data name="Product name" xml:space="preserve">
+    <value>Product name</value>
+    <comment>Common</comment>
+  </data>
+  <data name="Product Stoke" xml:space="preserve">
+    <value>Product Stoke</value>
+    <comment>Common</comment>
   </data>
   <data name="products" xml:space="preserve">
     <value>products</value>

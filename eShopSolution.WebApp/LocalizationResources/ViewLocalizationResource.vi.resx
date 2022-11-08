@@ -169,9 +169,21 @@
     <value>Trang</value>
     <comment>Common</comment>
   </data>
+  <data name="Price Lowest first" xml:space="preserve">
+    <value>Giá thấp nhất</value>
+    <comment>Common</comment>
+  </data>
   <data name="Product Details" xml:space="preserve">
     <value>Chi tiết sản phẩm</value>
     <comment>/Product/Detail</comment>
+  </data>
+  <data name="Product name" xml:space="preserve">
+    <value>Tên sản phẩm</value>
+    <comment>Common</comment>
+  </data>
+  <data name="Product Stoke" xml:space="preserve">
+    <value>Kho sản phẩm</value>
+    <comment>Common</comment>
   </data>
   <data name="products" xml:space="preserve">
     <value>san-pham</value>
