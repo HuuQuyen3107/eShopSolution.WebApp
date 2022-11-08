@@ -59,7 +59,7 @@ namespace eShopSolution.ApiIntegration
             throw new Exception(body);
         }
 
-        protected async Task<TResponse> DeleteAsync<TResponse>(string url)
+        public async Task<bool> Delete(string url)
         {
             var sessions = _httpContextAccessor.HttpContext.Session.GetString(SystemConstants.AppSettings.Token);
             var client = _httpClientFactory.CreateClient();
@@ -68,11 +68,10 @@ namespace eShopSolution.ApiIntegration
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
 
             var response = await client.DeleteAsync(url);
-            var body = await response.Content.ReadAsStringAsync();
             if (response.IsSuccessStatusCode)
-                return JsonConvert.DeserializeObject<TResponse>(body);
+                return true;
 
-            return JsonConvert.DeserializeObject<TResponse>(body);
+            return false;
         }
 
         protected async Task<TResponse> GetByIdAsync<TResponse>(string url)

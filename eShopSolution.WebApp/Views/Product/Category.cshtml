@@ -22,10 +22,10 @@
     <div class="control-group">
         <label class="control-label alignL"><localize>Sort By</localize> </label>
         <select>
-            <option>Priduct name A - Z</option>
-            <option>Priduct name Z - A</option>
-            <option>Priduct Stoke</option>
-            <option>Price Lowest first</option>
+            <option><localize>Product name</localize> A - Z</option>
+            <option><localize>Product name</localize> Z - A</option>
+            <option><localize>Product Stoke</localize></option>
+            <option><localize>Price Lowest first</localize></option>
         </select>
     </div>
 </form>
@@ -97,5 +97,5 @@
     </div>
 </div>
 
-@await Component.InvokeAsync("Pager", Model)
+@await Component.InvokeAsync("Pager", Model.Products)
 <br class="clr" />
