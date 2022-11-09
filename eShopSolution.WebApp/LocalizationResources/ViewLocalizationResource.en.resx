@@ -133,6 +133,10 @@
     <value>categories</value>
     <comment>Layouts</comment>
   </data>
+  <data name="Confirm Password" xml:space="preserve">
+    <value>Confirm Password</value>
+    <comment>Common</comment>
+  </data>
   <data name="Contact" xml:space="preserve">
     <value>Contact</value>
     <comment>Layouts</comment>
@@ -144,6 +148,10 @@
   <data name="CREATE YOUR ACCOUNT" xml:space="preserve">
     <value>CREATE YOUR ACCOUNT</value>
     <comment>/Account/Login</comment>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+    <comment>Common</comment>
   </data>
   <data name="Delivery" xml:space="preserve">
     <value>Delivery</value>
@@ -169,12 +177,20 @@
     <value>Featured Products</value>
     <comment>/Home/Index</comment>
   </data>
+  <data name="First name" xml:space="preserve">
+    <value>First name</value>
+    <comment>Common</comment>
+  </data>
   <data name="Forget password?" xml:space="preserve">
     <value>Forget password?</value>
     <comment>/Account/Login</comment>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Home</value>
+    <comment>Common</comment>
+  </data>
+  <data name="Last name" xml:space="preserve">
+    <value>Last name</value>
     <comment>Common</comment>
   </data>
   <data name="Latest Products" xml:space="preserve">
@@ -185,8 +201,16 @@
     <value>Login</value>
     <comment>Common</comment>
   </data>
+  <data name="Login failure" xml:space="preserve">
+    <value>Login failure</value>
+    <comment>Common</comment>
+  </data>
   <data name="Logout" xml:space="preserve">
     <value>Logout</value>
+    <comment>Common</comment>
+  </data>
+  <data name="Mobile Phone" xml:space="preserve">
+    <value>Mobile Phone</value>
     <comment>Common</comment>
   </data>
   <data name="More Details" xml:space="preserve">
@@ -203,7 +227,7 @@
   </data>
   <data name="Password" xml:space="preserve">
     <value>Password</value>
-    <comment>/Account/Login</comment>
+    <comment>Common</comment>
   </data>
   <data name="Price Lowest first" xml:space="preserve">
     <value>Price Lowest first</value>
@@ -233,9 +257,17 @@
     <value>Related Products</value>
     <comment>/Product/Detail</comment>
   </data>
+  <data name="Required field" xml:space="preserve">
+    <value>Required field</value>
+    <comment>Common</comment>
+  </data>
   <data name="Sign in" xml:space="preserve">
     <value>Sign in</value>
     <comment>/Account/Login</comment>
+  </data>
+  <data name="Sign up" xml:space="preserve">
+    <value>Register</value>
+    <comment>Common</comment>
   </data>
   <data name="Sort By" xml:space="preserve">
     <value>Sort By</value>
@@ -244,6 +276,10 @@
   <data name="Specials Offer" xml:space="preserve">
     <value>Specials Offer</value>
     <comment>Layouts</comment>
+  </data>
+  <data name="User Name" xml:space="preserve">
+    <value>User Name</value>
+    <comment>Common</comment>
   </data>
   <data name="Vietnamese" xml:space="preserve">
     <value>Vietnamese</value>
@@ -256,5 +292,9 @@
   <data name="View details" xml:space="preserve">
     <value>View details</value>
     <comment>/Product/Category</comment>
+  </data>
+  <data name="Your personal information" xml:space="preserve">
+    <value>Your personal information</value>
+    <comment>Common</comment>
   </data>
 </root>
