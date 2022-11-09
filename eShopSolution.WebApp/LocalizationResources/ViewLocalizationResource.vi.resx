@@ -133,6 +133,10 @@
     <value>danh-muc</value>
     <comment>Layouts</comment>
   </data>
+  <data name="Confirm Password" xml:space="preserve">
+    <value>Xác nhận mật khẩu</value>
+    <comment>Common</comment>
+  </data>
   <data name="Contact" xml:space="preserve">
     <value>Liên hệ</value>
     <comment>Layouts</comment>
@@ -144,6 +148,10 @@
   <data name="CREATE YOUR ACCOUNT" xml:space="preserve">
     <value>TẠO TÀI KHOẢN CỦA BẠN</value>
     <comment>/Account/Login</comment>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Ngày sinh</value>
+    <comment>Common</comment>
   </data>
   <data name="Delivery" xml:space="preserve">
     <value>Giao hàng</value>
@@ -169,12 +177,20 @@
     <value>Sản phẩm nổi bật</value>
     <comment>/Home/Index</comment>
   </data>
+  <data name="First name" xml:space="preserve">
+    <value>Tên</value>
+    <comment>Common</comment>
+  </data>
   <data name="Forget password?" xml:space="preserve">
     <value>Bạn quên mật khẩu?</value>
     <comment>/Account/Login</comment>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Trang chủ</value>
+    <comment>Common</comment>
+  </data>
+  <data name="Last name" xml:space="preserve">
+    <value>Họ</value>
     <comment>Common</comment>
   </data>
   <data name="Latest Products" xml:space="preserve">
@@ -185,8 +201,16 @@
     <value>Đăng nhập</value>
     <comment>Common</comment>
   </data>
+  <data name="Login failure" xml:space="preserve">
+    <value>Lỗi đăng nhập</value>
+    <comment>Common</comment>
+  </data>
   <data name="Logout" xml:space="preserve">
     <value>Đăng xuất</value>
+    <comment>Common</comment>
+  </data>
+  <data name="Mobile Phone" xml:space="preserve">
+    <value>Số điện thoại</value>
     <comment>Common</comment>
   </data>
   <data name="More Details" xml:space="preserve">
@@ -203,7 +227,7 @@
   </data>
   <data name="Password" xml:space="preserve">
     <value>Mật khẩu</value>
-    <comment>/Account/Login</comment>
+    <comment>Common</comment>
   </data>
   <data name="Price Lowest first" xml:space="preserve">
     <value>Giá thấp nhất</value>
@@ -233,9 +257,17 @@
     <value>Sản phẩm liên quan</value>
     <comment>/Product/Detail</comment>
   </data>
+  <data name="Required field" xml:space="preserve">
+    <value>Bắt buộc</value>
+    <comment>Common</comment>
+  </data>
   <data name="Sign in" xml:space="preserve">
     <value>Đăng nhập</value>
     <comment>/Account/Login</comment>
+  </data>
+  <data name="Sign up" xml:space="preserve">
+    <value>Đăng ký</value>
+    <comment>Common</comment>
   </data>
   <data name="Sort By" xml:space="preserve">
     <value>Sắp xếp theo</value>
@@ -244,6 +276,10 @@
   <data name="Specials Offer" xml:space="preserve">
     <value>Khuyến mãi</value>
     <comment>Layouts</comment>
+  </data>
+  <data name="User Name" xml:space="preserve">
+    <value>Tài khoản</value>
+    <comment>Common</comment>
   </data>
   <data name="Vietnamese" xml:space="preserve">
     <value>Tiếng Việt</value>
@@ -255,6 +291,10 @@
   </data>
   <data name="View details" xml:space="preserve">
     <value>Xem chi tiết</value>
+    <comment>Common</comment>
+  </data>
+  <data name="Your personal information" xml:space="preserve">
+    <value>Thông tin cá nhân</value>
     <comment>Common</comment>
   </data>
 </root>

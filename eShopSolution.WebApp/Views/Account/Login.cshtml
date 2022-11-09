@@ -1,4 +1,5 @@
-﻿@{
+﻿@model eShopSolution.ViewModels.System.Users.LoginRequest
+@{
     ViewData["Title"] = "Login";
     Layout = "~/Views/Shared/_Layout.cshtml";
     var culture = CultureInfo.CurrentCulture.Name;
@@ -16,14 +17,8 @@
             <h5><localize>CREATE YOUR ACCOUNT</localize></h5><br />
             <localize>Enter your e-mail address to create an account.</localize><br /><br /><br />
             <form action="register.html">
-                <div class="control-group">
-                    <label class="control-label" for="inputEmail0"><localize>E-mail address</localize></label>
-                    <div class="controls">
-                        <input class="span3" type="text" id="inputEmail0" placeholder="Email">
-                    </div>
-                </div>
                 <div class="controls">
-                    <button type="submit" class="btn block"><localize>Create Account</localize></button>
+                    <a href="/@culture/Account/Register" class="btn block"><localize>Create Account</localize></a>
                 </div>
             </form>
         </div>
@@ -36,13 +31,15 @@
                 <div class="control-group">
                     <label class="control-label" for="inputEmail1"><localize>Email / Account</localize></label>
                     <div class="controls">
-                        <input class="span3" type="text" name="UserName" placeholder="Email">
+                        <input class="span3" type="text" asp-for="UserName" placeholder="Email">
+                        <span asp-validation-for="UserName" class="text-error"></span>
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="inputPassword1"><localize>Password</localize></label>
                     <div class="controls">
-                        <input type="password" class="span3" name="Password" placeholder="Password">
+                        <input type="password" class="span3" asp-for="Password" placeholder="Password">
+                        <span asp-validation-for="Password" class="text-error"></span>
                     </div>
                 </div>
                 <div class="control-group">
