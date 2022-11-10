@@ -129,6 +129,10 @@
     <value>sản phẩm có sẵn</value>
     <comment>/Product/Category</comment>
   </data>
+  <data name="Cart" xml:space="preserve">
+    <value>Giỏ hàng</value>
+    <comment>Common</comment>
+  </data>
   <data name="categoryUrl" xml:space="preserve">
     <value>danh-muc</value>
     <comment>Layouts</comment>
@@ -187,6 +191,10 @@
   </data>
   <data name="Home" xml:space="preserve">
     <value>Trang chủ</value>
+    <comment>Common</comment>
+  </data>
+  <data name="Items in your cart" xml:space="preserve">
+    <value>Sản phẩm trong giỏ hàng</value>
     <comment>Common</comment>
   </data>
   <data name="Last name" xml:space="preserve">
