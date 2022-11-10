@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Cart";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -12,7 +12,7 @@
 }
 
 <ul class="breadcrumb">
-    <li><a href="/">Home</a> <span class="divider">/</span></li>
+    <li><a href="index.html">Home</a> <span class="divider">/</span></li>
     <li class="active"> SHOPPING CART</li>
 </ul>
 
@@ -23,7 +23,7 @@
 
 <hr class="soft" />
 
-<table class="table table-bordered">
+<table class="table table-bordered" id="tbl_cart">
     <thead>
         <tr>
             <th>Product</th>
