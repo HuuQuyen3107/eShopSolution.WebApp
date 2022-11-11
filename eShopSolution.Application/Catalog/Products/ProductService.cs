@@ -76,7 +76,7 @@ namespace eShopSolution.Application.Catalog.Products
                 DateCreated = DateTime.Now,
                 ProductTranslations = translations
             };
-            //Save image
+
             if (request.ThumbnailImage != null)
             {
                 product.ProductImages = new List<ProductImage>()
