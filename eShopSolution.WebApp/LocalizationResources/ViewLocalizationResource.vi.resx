@@ -145,6 +145,10 @@
     <value>Liên hệ</value>
     <comment>Layouts</comment>
   </data>
+  <data name="Continue Shopping" xml:space="preserve">
+    <value>Tiếp tục mua sắm</value>
+    <comment>Common</comment>
+  </data>
   <data name="Create Account" xml:space="preserve">
     <value>Tạo tài khoản</value>
     <comment>Common</comment>
@@ -267,6 +271,10 @@
   </data>
   <data name="Required field" xml:space="preserve">
     <value>Bắt buộc</value>
+    <comment>Common</comment>
+  </data>
+  <data name="SHOPPING CART" xml:space="preserve">
+    <value>Giỏ hàng</value>
     <comment>Common</comment>
   </data>
   <data name="Sign in" xml:space="preserve">
