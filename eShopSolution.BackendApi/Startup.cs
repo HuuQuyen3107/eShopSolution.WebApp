@@ -57,7 +57,6 @@ namespace eShopSolution.BackendApi
             services.AddTransient<ICategoryService, CategoryService>();
 
             services.AddTransient<ISlideService, SlideService>();
-            services.AddTransient<IOrderService, OrderService>();
 
             //services.AddTransient<IValidator<LoginRequest>, LoginRequestValidator>();
             //services.AddTransient<IValidator<RegisterRequest>, RegisterRequestValidator>();

@@ -17,12 +17,10 @@ namespace eShopSolution.WebApp.Controllers
     public class CartController : Controller
     {
         private readonly IProductApiClient _productApiClient;
-        private readonly IOrderApiClient _orderApiClient;
 
-        public CartController(IProductApiClient productApiClient, IOrderApiClient orderApiClient)
+        public CartController(IProductApiClient productApiClient)
         {
             _productApiClient = productApiClient;
-            _orderApiClient = orderApiClient;
         }
 
         public IActionResult Index()
@@ -36,7 +34,7 @@ namespace eShopSolution.WebApp.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Checkout(CheckoutViewModel request)
+        public IActionResult Checkout(CheckoutViewModel request)
         {
             var model = GetCheckoutViewModel();
             var orderDetails = new List<OrderDetailVm>();
@@ -57,8 +55,8 @@ namespace eShopSolution.WebApp.Controllers
                 OrderDetails = orderDetails
             };
 
-            var orders = await _orderApiClient.Order(request.CheckoutModel);
-            return View(orders);
+            TempData["SuccessMsg"] = "Order puschased successful";
+            return View(model);
         }
 
         [HttpGet]
